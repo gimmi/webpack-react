@@ -3,7 +3,10 @@ const HtmlPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: [
+        "./src/index.scss",
+        "./src/index.js",
+    ],
     output: {
         path: path.join(__dirname, "dist"),
         filename: "bundle.[contenthash].js",
@@ -18,8 +21,8 @@ module.exports = {
                 use: ["babel-loader"],
             },
             {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"],
+                test: /\.(scss|sass|css)$/,
+                use: ["style-loader", "css-loader", "sass-loader"],
             },
         ],
     },
