@@ -2,3 +2,7 @@ $spacer: .5em;
 $enable-rounded: false;
 
 @import "~bootstrap/scss/bootstrap";
+
+// https://stackoverflow.com/a/74992564/66629
+$bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";

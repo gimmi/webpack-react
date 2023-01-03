@@ -7,7 +7,7 @@ export default function App() {
     return (
         <Modal show centered animation={false}>
             <Modal.Header>
-                <Modal.Title>Modal title</Modal.Title>
+                <Modal.Title><i className="bi-alarm"></i> Modal title</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 You clicked <strong>{count}</strong> times
